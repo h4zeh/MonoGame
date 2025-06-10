@@ -224,6 +224,9 @@ namespace Microsoft.Xna.Framework
                         if (ev.Window.WindowID != _view.Id)
                             break;
 
+                        // Clear keys when user interact with window
+                        _keys.Clear();
+
                         switch (ev.Window.EventID)
                         {
                             case Sdl.Window.EventId.Resized:
